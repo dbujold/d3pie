@@ -204,7 +204,7 @@ var segments = {
 		}
 		pie.isOpeningSegment = true;
 
-		segments.maybeCloseOpenSegment();
+		segments.maybeCloseOpenSegment(pie);
 
 		d3.select(segment).transition()
 			.ease(segments.effectMap[pie.options.effects.pullOutSegmentOnClick.effect])
